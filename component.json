@@ -1,0 +1,13 @@
+{
+  "name": "validate-form-tip",
+  "repo": "segmentio/validate-form-tip",
+  "description": "A tooltip error message plugin for validate-form.",
+  "version": "0.0.1",
+  "license": "MIT",
+  "keywords": ["validate", "form", "tooltip", "message"],
+  "dependencies": {
+    "component/classes": "*",
+    "component/tip": "*"
+  },
+  "scripts": ["index.js"]
+}
