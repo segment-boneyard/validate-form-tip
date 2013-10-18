@@ -1,4 +1,3 @@
-
 # validate-form-tip
 
   A tooltip error message plugin for validate-form.
@@ -18,9 +17,13 @@ var form = document.querySelector('form');
 
 validate(form)
   .use(tip({ position: 'west' })
-  .field('email')
+  .field('username')
     .is('required')
-    .is('email');
+    .is(function (val, done) {
+      isUnique(val, function (err, res) {
+        done(res.body.unique);
+      });
+    });
 ```
 
 ## API
